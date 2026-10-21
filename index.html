@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="A bilingual leadership learning escape room about teams, team development, team types, cohesiveness, virtual teams and conflict.">
+  <title>Leadership Chapter 9 (Teams) — Escape Room</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#" id="brandHome" aria-label="Return to home">
+        <span class="brand-mark" aria-hidden="true">L9</span>
+        <span><strong>LEADERSHIP</strong><small>CHAPTER 9 · TEAMS</small></span>
+      </a>
+      <div class="topbar-right">
+        <span class="language-tag">EN · BM</span>
+        <button class="icon-button" id="homeButton" type="button" title="Return to home" aria-label="Return to home">⌂</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="homeScreen" class="screen hero-screen">
+        <div class="hero-copy">
+          <p class="eyebrow">LEARNING ESCAPE ROOM · BILIK ESCAPE PEMBELAJARAN</p>
+          <h1>Leadership<br><span>Chapter 9: Teams</span></h1>
+          <p class="hero-lead">Unlock the Leadership Vault by solving ten team challenges. Think like a team leader—not just a fast player.</p>
+          <p class="hero-lead bm">Buka Peti Besi Kepimpinan dengan menyelesaikan sepuluh cabaran berkaitan pasukan. Berfikir seperti seorang ketua pasukan—bukan sekadar pemain yang pantas.</p>
+          <div class="hero-actions">
+            <button id="startButton" class="button primary-button" type="button">▶ Play / Mula Bermain</button>
+            <button id="instructionsButton" class="button secondary-button" type="button">How to Play / Cara Bermain</button>
+          </div>
+          <div class="hero-facts">
+            <div><strong>10</strong><span>Challenges / Cabaran</span></div>
+            <div><strong>15 min</strong><span>Suggested / Cadangan</span></div>
+            <div><strong>EN + BM</strong><span>Dual language / Dwibahasa</span></div>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Illustration of a futuristic leadership vault">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="floating-cube cube-one">TEAM</div><div class="floating-cube cube-two">GOAL</div>
+          <div class="vault">
+            <div class="vault-top"></div><div class="vault-door">
+              <div class="vault-wheel"><span></span></div>
+              <div class="vault-lines"></div>
+            </div>
+            <div class="vault-base"></div>
+          </div>
+          <div class="art-caption"><span class="pulse-dot"></span> LEADERSHIP VAULT · SEALED</div>
+        </div>
+        <div class="outcome-panel">
+          <h2>Learning outcomes / Hasil pembelajaran</h2>
+          <p>By the end, you should be able to identify team characteristics, distinguish teams from groups, apply the stages of team development, recognise team types, and choose constructive responses to cohesion, virtual-team and conflict challenges.</p>
+          <p class="bm">Pada akhir permainan, anda sepatutnya dapat mengenal pasti ciri pasukan, membezakan pasukan daripada kumpulan, mengaplikasikan peringkat perkembangan pasukan, mengenal jenis pasukan, serta memilih tindakan yang sesuai bagi isu kesepaduan, pasukan maya dan konflik.</p>
+        </div>
+      </section>
+
+      <section id="instructionsScreen" class="screen instructions-screen hidden">
+        <div class="section-heading">
+          <p class="eyebrow">MISSION BRIEFING · TAKLIMAT MISI</p>
+          <h1>How to play / Cara bermain</h1>
+          <p>Each locked room contains one challenge. Choose an answer to submit it. You must answer correctly to unlock the next room.</p>
+          <p class="bm">Setiap bilik berkunci mengandungi satu cabaran. Pilih jawapan untuk menghantarnya. Anda mesti menjawab dengan betul untuk membuka bilik seterusnya.</p>
+        </div>
+        <div class="instruction-grid">
+          <article class="instruction-card"><span class="instruction-icon">01</span><h3>Explore / Teroka</h3><p>Read the room clue and scenario before answering.</p><p class="bm">Baca petunjuk dan situasi bilik sebelum menjawab.</p></article>
+          <article class="instruction-card"><span class="instruction-icon">02</span><h3>Choose / Pilih</h3><p>Use the mouse, keyboard, or touch screen to select an answer.</p><p class="bm">Gunakan tetikus, papan kekunci atau skrin sentuh untuk memilih jawapan.</p></article>
+          <article class="instruction-card"><span class="instruction-icon">03</span><h3>Learn / Belajar</h3><p>Read the explanation. Incorrect answers can be tried again without losing learning points.</p><p class="bm">Baca penerangan. Jawapan salah boleh dicuba semula tanpa kehilangan markah pembelajaran.</p></article>
+          <article class="instruction-card"><span class="instruction-icon">04</span><h3>Unlock / Buka</h3><p>Press Continue after feedback to enter the next room.</p><p class="bm">Tekan Teruskan selepas maklum balas untuk masuk ke bilik seterusnya.</p></article>
+        </div>
+        <div class="scoring-box">
+          <h3>Scoring / Pemarkahan</h3>
+          <p><strong>10 points</strong> for the first correct answer in each room. An incorrect attempt earns no points, but you can retry. Speed does not affect your learning score.</p>
+          <p class="bm"><strong>10 markah</strong> untuk jawapan betul pertama di setiap bilik. Percubaan salah tidak mendapat markah, tetapi anda boleh mencuba semula. Kelajuan tidak mempengaruhi markah pembelajaran.</p>
+          <label class="toggle-row"><input id="untimedToggle" type="checkbox" checked> <span><strong>Untimed mode / Mod tanpa had masa</strong><small>Recommended for learning. Turn off to show a 15-minute session clock.</small><small class="bm">Disyorkan untuk pembelajaran. Matikan untuk memaparkan jam sesi 15 minit.</small></span></label>
+        </div>
+        <div class="center-actions"><button id="beginMissionButton" class="button primary-button" type="button">Enter the Vault / Masuk ke Peti Besi →</button><button id="backHomeButton" class="button secondary-button" type="button">← Home / Laman Utama</button></div>
+      </section>
+
+      <section id="gameScreen" class="screen game-screen hidden">
+        <div class="game-heading">
+          <div><p class="eyebrow">MISSION IN PROGRESS · MISI SEDANG BERJALAN</p><h1 id="roomTitle">Room 01</h1><p id="roomSubtitle" class="bm"></p></div>
+          <div class="game-stats"><div class="stat-card"><span>ROOM / BILIK</span><strong id="roomCounter">01 / 10</strong></div><div class="stat-card"><span>SCORE / MARKAH</span><strong id="scoreValue">0 / 100</strong></div><div id="timerCard" class="stat-card hidden"><span>TIME / MASA</span><strong id="timerValue">15:00</strong></div></div>
+        </div>
+        <div class="progress-wrap" aria-label="Mission progress"><div class="progress-meta"><span>Vault access / Akses peti besi</span><span id="progressLabel">0% unlocked</span></div><div class="progress-track"><div id="progressBar" class="progress-bar"></div></div><div id="roomDots" class="room-dots" aria-label="Room progress"></div></div>
+        <div class="game-layout">
+          <aside class="room-scene">
+            <div class="scene-label"><span class="pulse-dot"></span><span id="sceneStatus">SEALED ROOM</span></div>
+            <div class="scene-illustration" id="sceneIllustration" aria-hidden="true">
+              <div class="scene-door"><div class="scene-door-panel"><div class="scene-lock">✦</div></div></div>
+              <div class="scene-pedestal"></div><div class="scene-glow"></div>
+            </div>
+            <div class="room-clue"><span class="clue-icon">⌁</span><div><strong>Room clue / Petunjuk bilik</strong><p id="roomClue"></p><p class="bm" id="roomClueBm"></p></div></div>
+            <div class="scene-footer"><span>LEADERSHIP VAULT</span><span id="sceneRoomNo">01</span></div>
+          </aside>
+          <section class="challenge-panel">
+            <div class="challenge-top"><span id="challengeType" class="pill">MCQ</span><span id="attemptLabel">First attempt / Percubaan pertama</span></div>
+            <h2 id="questionText"></h2>
+            <p id="questionBm" class="question-bm bm"></p>
+            <div id="scenarioBox" class="scenario-box hidden"><strong>Scenario / Situasi</strong><p id="scenarioText"></p><p id="scenarioBm" class="bm"></p></div>
+            <form id="answerForm">
+              <div id="answerOptions" class="answer-options"></div>
+              <button id="submitAnswerButton" class="button primary-button submit-button" type="submit">Submit answer / Hantar jawapan →</button>
+            </form>
+            <div id="feedbackBox" class="feedback-box hidden" role="status" aria-live="polite">
+              <div class="feedback-heading"><span id="feedbackIcon">✓</span><strong id="feedbackTitle">Correct!</strong></div>
+              <p id="feedbackExplanation"></p><p id="feedbackExplanationBm" class="bm"></p>
+              <button id="continueButton" class="button primary-button" type="button">Continue / Teruskan →</button>
+            </div>
+          </section>
+        </div>
+        <div class="game-bottom-actions"><button id="restartButton" class="text-button" type="button">↻ Restart mission / Mula semula</button><button id="gameHomeButton" class="text-button" type="button">⌂ Return home / Kembali ke laman utama</button></div>
+      </section>
+
+      <section id="completionScreen" class="screen completion-screen hidden">
+        <div class="completion-emblem"><span>★</span></div>
+        <p class="eyebrow">VAULT UNLOCKED · PETI BESI DIBUKA</p>
+        <h1 id="completionTitle">Mission complete!</h1>
+        <p id="completionSubtitle" class="completion-subtitle">You have completed all ten leadership challenges.</p>
+        <div class="results-grid">
+          <div class="result-card"><span>LEARNING SCORE / MARKAH</span><strong id="finalScore">0 / 100</strong></div>
+          <div class="result-card"><span>FIRST-TRY ACCURACY / KETEPATAN</span><strong id="finalAccuracy">0%</strong></div>
+          <div class="result-card"><span>ROOMS CLEARED / BILIK SELESAI</span><strong id="finalRooms">10 / 10</strong></div>
+        </div>
+        <div class="results-note"><h2>What you demonstrated / Apa yang anda tunjukkan</h2><p id="resultMessage"></p><p id="resultMessageBm" class="bm"></p><p class="small-note">Score measures correct first answers, not speed. Review the answer explanations below to reinforce learning.</p><p class="small-note bm">Markah mengukur jawapan betul pada percubaan pertama, bukan kelajuan. Semak penerangan di bawah untuk mengukuhkan pembelajaran.</p></div>
+        <div class="review-section"><h2>Answer review / Semakan jawapan</h2><div id="answerReview" class="review-list"></div></div>
+        <div class="center-actions"><button id="playAgainButton" class="button primary-button" type="button">↻ Play again / Main semula</button><button id="completionHomeButton" class="button secondary-button" type="button">⌂ Home / Laman utama</button></div>
+      </section>
+    </main>
+    <footer><span>ENC133 LEADERSHIP · CHAPTER 9</span><span>Understand · Coordinate · Build · Lead · Resolve</span></footer>
+  </div>
+  <noscript><div class="noscript">This learning game requires JavaScript to run. Please enable JavaScript in your browser.</div></noscript>
+</body>
+</html>
